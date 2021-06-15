@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+$font-style: 'Montserrat', sans-serif;
+
+.footer{
+    display: flex;
+    position: relative;
+}
+.footer-info {
+    background: #1E2E36;
+    min-width: 831px;
+    padding: 50px 0px 15px 51px;
+    .footer-content {
+        display: flex;
+        margin: 50px 0 100px 0;
+        .footer-nav{
+            display: flex;
+            margin-right: 90px;
+            .footer-nav-first-part{
+                margin-right: 57px;
+            }
+        }
+    }
+}
+.footer-nav__items{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.25;
+    margin-bottom: 15px;
+    & a{
+        color: #fff;
+    }
+    :before{
+        content:"―";
+        color: #44C697;
+        margin-right: 3px;
+    }
+    :last-child{
+        margin-bottom: 0;
+    }
+}
+.footer-contacts{
+    .footer-location,.footer-time_open{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.25;
+        margin-bottom: 15px;
+        font-family: $font-style;
+        & img{
+            margin-right: 8px;
+        }
+    }
+    .footer-contacts_tel{
+        color: #44C697;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        & div{
+            display: flex;
+            flex-direction:column;
+            margin: 10px 0 0 8px;
+        }
+    }
+    .social-icons-description{
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 125%;
+        color: #fff;
+        margin-bottom: 15px;
+        font-family: $font-style;
+    }
+    .social-icons{
+        display: flex;
+        align-items: center;
+        .social-icons__items.footer{
+            filter: invert(1);
+            margin-right: 0;
+        }
+    }
+   
+}
+.studio-info{
+    position: absolute;
+    left: 51px;
+    bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .studio-copyright{
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.2;
+        color: #fff;
+        margin-right: 120px;
+        font-family: $font-style;
+    }
+    .studio-logo{
+        display: flex;
+        align-items: center;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #fff;
+        font-family: $font-style;
+        & img{
+            margin-right: 3px;
+        }
+    }
+}

@@ -1,0 +1,394 @@
+@import './reset.scss';
+@import './header.scss';
+@import './footer.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+$font-style: 'Montserrat', sans-serif;
+
+.container {
+    max-width: 1818px;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 51px;
+}
+.container.about-us{
+    padding-right: 0;
+    max-width: none;
+}
+.container.question{
+    padding-left: 0;
+    max-width: none;
+}
+
+.info {
+    position: relative;
+    background-image: url('../img/Rectangle137.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 785px;
+    height: 785px;
+    margin-bottom: 100px;
+}
+.info-card {
+    width: 462px;
+    height: 670px;
+    position: absolute;
+    left: 51px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    background-image: url('../img/Rectangle176.png');
+    background-repeat: no-repeat !important;
+    background-size: contain;
+    font-family: $font-style;
+}
+.info-card__title {
+    font-size: 64px;
+    margin-top: 99px;
+    margin: 99px 0 50px 0;
+    color: #1E2E36;
+    font-weight: bold;
+    font-family: $font-style;
+    font-style: normal;
+}
+.info-card__sub_title {
+    font-size: 36px;
+    color: #1E2E36;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: $font-style;
+    
+}
+.info-card__text {
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    padding: 0 65px;
+    margin-bottom: 30px;
+    font-family: $font-style;
+
+}
+.btn {
+    background-color: #44C697;
+    font-size: 18px;
+    color: #fff;
+    padding: 14px 46px;
+    font-weight: bold;
+    font-family: $font-style;
+
+}
+.info-clider{
+    margin-top: 64px;
+}
+.info-slider-counter {
+    display: flex;
+    align-items: center;
+    & span{
+        font-size: 36px;
+        font-weight: bold;
+    }
+}
+.first-slide,.last-slide{
+    font-size: 36px;
+    line-height: 1.25;
+    font-weight: bold;
+    font-family: $font-style;
+}
+.last-slide {
+    font-size: 24px;
+}
+
+.info-slider-slick__left{
+    border: 1px solid #000;
+    padding: 9px 12px;
+    border-radius: 100%;
+    color: #000;
+}
+.info-slider-slick__right{
+    padding: 9px 12px;
+    border-radius: 100%;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+.block-section-title {
+    display: flex;
+    justify-content: center;
+    .section-title{
+        background-image: url('../img/Rectangle165.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: 48px;
+        font-weight: bold;
+        color: #1E2E36;
+        line-height: 1.25;
+        padding-left: 4px;
+        font-family: $font-style;
+    }
+}
+
+.our-advantage{
+    padding-bottom: 300px;
+}
+
+.slider{
+    display: flex;
+    margin-top: 52px;
+    :last-child{
+        margin-right: 0;
+    }
+}
+.slider-items{
+    position: relative;
+    max-width: 33.3%;
+    margin-right: 30px;
+    
+    .slider-items__img{
+        width: 100%;
+        height: 100%;
+    }
+    &__title{
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.25;
+        color: #fff;
+        z-index: 10;
+        margin-bottom: 15px;
+        border-bottom: 3px solid #44C697;
+        transform: translateY(50px);
+        font-family: $font-style;
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 1.25;
+        color: #fff;
+        opacity: 0;
+        font-family: $font-style;
+
+    }
+}
+.slider-items__content{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.slider-items:hover{
+    .slider-items__title{
+        transform: translateY(-15px);
+    }
+    .slider-items__text{
+        opacity: 1;
+    }
+}
+.slider-slick__left{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    border: 1px solid #fff;
+    padding: 9px 12px;
+    border-radius: 100%;
+    margin-top: -15px;
+    transform: rotate(180deg);
+}
+.slider-slick__right{
+    position: absolute;
+    top: 50%;
+    padding: 9px 12px;
+    border-radius: 100%;
+    background-color: #fff;
+    right: 15px;
+    transform: rotate(180deg);
+}
+
+.products-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 57px;
+    .products-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .products__img{
+            width: 100px;
+            height: 100px;
+        }
+        .products-items__title {
+            margin-top:10px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.25;
+            font-family: $font-style;
+        }
+    }
+}
+.products-btn{
+    display: flex;
+    justify-content:center
+}
+
+.products-items.active{
+    border-bottom: 3px solid #44C697;
+}
+
+.products-bed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 87px 0 64px 0;
+    .products-bed-items{
+        position: relative;
+        width: 30%;
+        margin-right: 30px;
+        img{
+            width: 100%;
+
+        }
+    }
+    .products-bed-items:nth-child(3){
+        margin-right: 0;
+    }
+    .products-bed-items:nth-child(6){
+        margin-right: 0;
+    }
+    .products-bed-description{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.25;
+        font-family: $font-style;
+        & s{
+            color: #BCBDBB;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 1.25;
+            font-family: $font-style;
+        }
+    }
+    .new-products,.products-promotions{
+        position: absolute;
+        top: 10px;
+        color: #fff;
+        background-color: #000;
+        padding: 5px 15px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 1.25;
+        font-family: $font-style;
+    }
+    .products-promotions{
+        background-color: red;
+        top: 48px;
+    }
+}
+.products-bed-items.promotions{
+        color: red
+}
+.products-bed-items:hover{
+    transform: scale(1.05);
+    .products-bed-description{
+        background-color: #44C697;
+        color: #fff;
+        margin-top: -5px;
+        & s{
+            color: #fff;
+        }
+    }
+}
+.about-us{
+    margin: 100px 0;
+    .about-content{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 50px;
+        .about-content__card{
+            background-image: url('../img/Rectangle176.png');
+            background-repeat: no-repeat !important;
+            background-position-x: right !important;
+            position: absolute;
+            max-width: 740px;
+            left: 0;
+            top: 150px;
+            background: #fff;
+            padding: 50px 30px 50px 0;
+            .about-content__card_text{
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 1.25;
+                margin-bottom: 15px;
+                font-family: $font-style;
+                span{
+                    color: #44C697;
+                }
+            }
+            .about-content__card_text:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
+.question{
+    margin-bottom: 109px;
+    .question-content{
+        position: relative;
+        margin-top: 50px;
+    }
+    .question-form{
+        background-image: url('../img/Rectangle176.png');
+        background-repeat: no-repeat !important;
+        position: absolute;
+        right: 0;
+        top: 100px;
+        max-width: 513px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 30px;
+        background-color: #fff;
+        .question-form__title{
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 1.25;
+            margin-bottom: 30px;
+            font-family: $font-style;
+        }
+        .form-input{
+            padding: 14px 0 14px 15px;
+            border: 1px solid ;
+            width:100%;
+            margin-bottom: 15px;
+        }
+        .question-form__input_btn{
+            padding: 14px 0;
+            background-color: #44C697;
+            color: #fff;
+            margin-bottom: 30px;
+            width: 100%;
+            font-size: 18px;
+            font-family: $font-style;
+        }
+        .question-form__text{
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 1.25;
+            font-family: $font-style;
+            & a{
+                color:black;
+                font-weight: bold;
+            }
+        }
+
+    }
+}
+
+
+
